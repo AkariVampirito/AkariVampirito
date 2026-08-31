@@ -1,0 +1,235 @@
+/*=====================================
+  CONTACT
+======================================*/
+
+.contact-section{
+
+    position:relative;
+
+    padding:140px 0;
+
+    overflow:hidden;
+
+}
+
+/*=====================================
+  CONTENEDOR
+======================================*/
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    margin-top:70px;
+
+}
+
+/*=====================================
+  AVATAR
+======================================*/
+
+.contact-avatar{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.contact-avatar img{
+
+    width:100%;
+
+    max-width:340px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    filter:
+    drop-shadow(
+    0 30px 50px
+    rgba(194,27,216,.15));
+
+    transition:.45s;
+
+}
+
+.contact-avatar img:hover{
+
+    transform:
+    translateY(-10px);
+
+}
+
+/*=====================================
+  REDES
+======================================*/
+
+.contact-socials{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+/*=====================================
+  TARJETAS
+======================================*/
+
+.social-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:24px;
+
+    background:white;
+
+    border-radius:24px;
+
+    border:1px solid rgba(194,27,216,.12);
+
+    text-decoration:none;
+
+    transition:.35s;
+
+    box-shadow:
+    0 18px 45px rgba(194,27,216,.05);
+
+}
+
+.social-card:hover{
+
+    transform:
+    translateY(-6px);
+
+    border-color:rgba(194,27,216,.35);
+
+    box-shadow:
+    0 25px 60px rgba(194,27,216,.12);
+
+}
+
+.social-icon{
+
+    width:65px;
+
+    aspect-ratio:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(194,27,216,.12),
+    rgba(194,27,216,.05)
+    );
+
+    font-size:30px;
+
+    transition:.35s;
+
+}
+
+.social-card:hover
+.social-icon{
+
+    transform:scale(1.08);
+
+}
+
+.social-info h3{
+
+    margin-bottom:6px;
+
+    color:var(--color-black);
+
+    font-size:20px;
+
+}
+
+.social-info p{
+
+    color:var(--color-text-light);
+
+    font-size:15px;
+
+}
+
+/*=====================================
+  CTA
+======================================*/
+
+.contact-cta{
+
+    max-width:760px;
+
+    margin:100px auto 50px;
+
+    text-align:center;
+
+}
+
+.contact-cta h3{
+
+    margin-bottom:18px;
+
+    font-size:42px;
+
+    color:var(--color-black);
+
+}
+
+.contact-cta p{
+
+    margin-bottom:35px;
+
+    color:var(--color-text-light);
+
+    font-size:19px;
+
+    line-height:1.8;
+
+}
+
+/*=====================================
+  DESPEDIDA
+======================================*/
+
+.contact-footer{
+
+    text-align:center;
+
+}
+
+.contact-footer p{
+
+    color:var(--color-primary);
+
+    font-size:22px;
+
+    font-style:italic;
+
+}

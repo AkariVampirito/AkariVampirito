@@ -1,0 +1,148 @@
+/*=========================================
+  SECCIONES GENERALES
+==========================================*/
+
+.section,
+.about-section,
+.contact-section {
+  width: min(100% - 48px, var(--container-width));
+  margin: 0 auto;
+  padding: var(--section-padding) 0;
+}
+
+.section-header {
+  position: relative;
+
+  max-width: 820px;
+  margin-bottom: 54px;
+  padding: 34px 38px;
+
+  background:
+    radial-gradient(circle at top right, rgba(194, 27, 216, 0.10), transparent 34%),
+    linear-gradient(135deg, rgba(255,255,255,.9), rgba(253,242,247,.45));
+
+  border-left: 5px solid var(--color-primary);
+  border-radius: 0 34px 34px 0;
+}
+
+.section-header::after {
+  content: "☾";
+  position: absolute;
+  right: 32px;
+  top: 20px;
+
+  color: var(--color-primary);
+  opacity: .16;
+  font-size: 54px;
+}
+
+.section-header h2 {
+  position: relative;
+  color: var(--color-black);
+}
+
+.section-header h2::after {
+  content: "";
+  display: block;
+
+  width: 130px;
+  height: 8px;
+
+  margin-top: 14px;
+
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    rgba(194, 27, 216, 0)
+  );
+
+  border-radius: 999px;
+}
+
+.section-header h2,
+.about-content h2,
+.contact-section h2 {
+  color: var(--color-black);
+  font-family: var(--font-title);
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 18px;
+}
+
+.section-header p,
+.about-content p,
+.contact-section p {
+  color: var(--color-text-light);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/*=========================================
+  SECCIÓN SUAVE / GALERÍA
+==========================================*/
+
+.soft-section {
+  width: 100%;
+  max-width: 100%;
+  padding: var(--section-padding) 0;
+
+  background:
+    radial-gradient(circle at 15% 20%, rgba(244, 143, 177, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 70%, rgba(216, 27, 96, 0.10), transparent 28%),
+    var(--color-background-soft);
+}
+
+.soft-section .section-header,
+.soft-section .gallery-grid {
+  width: min(100% - 48px, var(--container-width));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=========================================
+  CONTACTO
+==========================================*/
+
+.contact-section {
+  margin-bottom: 90px;
+  padding: 90px 32px;
+  text-align: center;
+
+  background:
+    radial-gradient(circle at 15% 20%, rgba(244, 143, 177, 0.24), transparent 28%),
+    radial-gradient(circle at 80% 80%, rgba(216, 27, 96, 0.12), transparent 28%),
+    linear-gradient(135deg, #ffffff, var(--color-background-alt));
+
+  border: 1px solid rgba(216, 27, 96, 0.10);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-section p {
+  max-width: 660px;
+  margin: 0 auto 30px;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/*=========================================
+  RESPONSIVE
+==========================================*/
+
+@media (max-width:768px){
+
+    .section,
+    .about-section,
+    .contact-section{
+
+        width:min(100% - 28px,var(--container-width));
+
+    }
+
+}

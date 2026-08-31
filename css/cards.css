@@ -1,0 +1,332 @@
+/*=========================================
+  GRID DE COSPLAYS
+==========================================*/
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/*=========================================
+  TARJETA
+==========================================*/
+
+.cosplay-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--gradient-card);
+
+    border: 1px solid rgba(216, 27, 96, .08);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition-normal);
+
+}
+
+.cosplay-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+/*=========================================
+  BORDE SUPERIOR
+==========================================*/
+
+.cosplay-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        var(--color-primary-light),
+        var(--color-primary)
+    );
+
+}
+
+/*=========================================
+  IMAGEN
+==========================================*/
+
+.card-image {
+
+    position: relative;
+
+    height: 420px;
+
+    overflow: hidden;
+
+}
+
+.placeholder{
+
+    background:
+    radial-gradient(circle at 50% 30%,
+    rgba(244,143,177,.30),
+    transparent 60%),
+
+    linear-gradient(
+    180deg,
+    #FFF8FB,
+    #FCE4EC
+    );
+
+}
+
+/*=========================================
+  DECORACIÓN DE LUNA
+==========================================*/
+
+.card-image::after{
+
+    content:"☾";
+
+    position:absolute;
+
+    right:18px;
+
+    top:18px;
+
+    font-size:42px;
+
+    color:white;
+
+    opacity:.55;
+
+}
+
+/*=========================================
+  CONTENIDO
+==========================================*/
+
+.card-content{
+
+    padding:28px;
+
+}
+
+.card-category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(194,27,216,.08);
+
+    border:1px solid rgba(194,27,216,.18);
+
+    color:var(--color-primary);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1.4px;
+
+    text-transform:uppercase;
+
+}
+
+.card-content h3{
+
+    margin-bottom:12px;
+
+    color:var(--color-black);
+
+    font-size:30px;
+
+    line-height:1;
+
+}
+
+.card-content p{
+
+    color:var(--color-text-light);
+
+    margin-bottom:24px;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+  LINK
+==========================================*/
+
+.card-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:var(--color-primary);
+
+    font-weight:700;
+
+    transition:var(--transition-fast);
+
+}
+
+.card-content a::after{
+
+    content:"→";
+
+    transition:var(--transition-fast);
+
+}
+
+.card-content a:hover{
+
+    gap:14px;
+
+}
+
+/*=========================================
+  GALERÍA
+==========================================*/
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+}
+
+/*=========================================
+  FOTO
+==========================================*/
+
+.gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    aspect-ratio:1/1;
+
+    border-radius:var(--radius-md);
+
+    background:var(--gradient-card);
+
+    box-shadow:var(--shadow-xs);
+
+    transition:var(--transition-normal);
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/*=========================================
+  PLACEHOLDER
+==========================================*/
+
+.gallery-item.placeholder{
+
+    background:
+    radial-gradient(circle at 50% 35%,
+    rgba(244,143,177,.25),
+    transparent 60%),
+
+    linear-gradient(
+    180deg,
+    #FFFDFE,
+    #FCE4EC
+    );
+
+}
+
+/*=========================================
+  EFECTO HOVER
+==========================================*/
+
+.gallery-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.18)
+    );
+
+    opacity:0;
+
+    transition:var(--transition-fast);
+
+}
+
+.gallery-item:hover::before{
+
+    opacity:1;
+
+}
+
+/*=========================================
+  ICONO
+==========================================*/
+
+.gallery-item::after{
+
+    content:"♡";
+
+    position:absolute;
+
+    right:18px;
+
+    bottom:14px;
+
+    color:white;
+
+    font-size:30px;
+
+    opacity:0;
+
+    transform:translateY(10px);
+
+    transition:var(--transition-fast);
+
+}
+
+.gallery-item:hover::after{
+
+    opacity:.95;
+
+    transform:translateY(0);
+
+}

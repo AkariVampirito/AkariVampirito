@@ -1,0 +1,114 @@
+/*=========================================
+  AKARIVAMPIRITO
+  VARIABLES GLOBALES
+==========================================*/
+
+:root {
+
+    /*=====================================
+      COLORES PRINCIPALES
+    =====================================*/
+
+    --color-primary: #9c1bd8;
+    --color-primary-dark: #7618c2;
+    --color-primary-light: #cf8ff4;
+
+    --color-black: #1B1B1B;
+
+    --color-white: #FFFFFF;
+
+    --color-background: #FFFFFF;
+
+    --color-background-soft: #FFF8FB;
+
+    --color-background-alt: #FDF2F7;
+
+    --color-text: #2C2C2C;
+
+    --color-text-light: #666666;
+
+    --color-border: #ECECEC;
+
+    /*=====================================
+      DEGRADADOS
+    =====================================*/
+
+    --gradient-primary:
+        linear-gradient(
+            135deg,
+            #f5e4fc 0%,
+            #fcf8ff 45%,
+            #FFFFFF 100%
+        );
+
+    --gradient-card:
+        linear-gradient(
+            180deg,
+            #FFFFFF,
+            #FFF8FB
+        );
+
+    /*=====================================
+      SOMBRAS
+    =====================================*/
+
+    --shadow-xs:
+        0 3px 10px rgba(172, 27, 216, 0.05);
+
+    --shadow-sm:
+        0 8px 20px rgba(194, 27, 216, 0.08);
+
+    --shadow-md:
+        0 15px 35px rgba(178, 27, 216, 0.1);
+
+    --shadow-lg:
+        0 30px 70px rgba(200, 27, 216, 0.15);
+
+    /*=====================================
+      BORDER RADIUS
+    =====================================*/
+
+    --radius-sm: 12px;
+
+    --radius-md: 20px;
+
+    --radius-lg: 30px;
+
+    --radius-xl: 40px;
+
+    --radius-round: 999px;
+
+    /*=====================================
+      ESPACIADOS
+    =====================================*/
+
+    --container-width: 1200px;
+
+    --section-padding: 120px;
+
+    --padding: 24px;
+
+    /*=====================================
+      TIPOGRAFÍA
+    =====================================*/
+
+    --font-main:
+        "Poppins",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    --font-title:
+        "Poppins",
+        Arial,
+        sans-serif;
+
+    /*=====================================
+      TRANSICIONES
+    =====================================*/
+
+    --transition-fast: .2s ease;
+
+    --transition-normal: .35s ease;
+
+}
